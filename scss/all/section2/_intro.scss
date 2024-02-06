@@ -1,0 +1,68 @@
+#intro {
+  padding: 96px 86px;
+
+  .intro-flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    box-icon{
+        cursor: pointer;
+    }
+    h1 {
+      color: $main-h1-6;
+      font-size: 60px;
+    }
+    p {
+      width: 768px;
+      color: $main-text;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 16px;
+        
+        box-icon{
+            cursor: default;
+        }
+
+        div {
+          width: 8px;
+          height: 8px;
+          background: #008000;
+          border-radius: 50%;
+          margin-left: 7px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  img {
+    width: 380px;
+    height: 420px;
+    box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
+    -webkit-box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
+    -moz-box-shadow: 3px 1px 0px -5px rgba(229, 231, 235, 0.55);
+    border:2px solid #008000;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover {
+      transition: all 0.2s ease;
+      box-shadow: 32px 35px 5px 3px rgba(213, 218, 222,1);
+      -webkit-box-shadow: 32px 35px 5px 3px rgba(213, 218, 222,1);
+      -moz-box-shadow: 32px 35px 5px 3px rgba(213, 218, 222,1);
+    }
+  }
+}
