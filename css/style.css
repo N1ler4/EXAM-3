@@ -590,4 +590,54 @@ footer {
 }
 .experience .card ul li:nth-child(1) {
   margin-left: 0px;
+}
+
+.work {
+  padding: 96px 80px;
+}
+.work h2 {
+  margin-bottom: 96px;
+  text-align: center;
+  color: #111827;
+  font-size: 20px;
+  font-weight: 400;
+}
+.work-card {
+  display: flex;
+  justify-content: space-evenly;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 48px;
+}
+.work-card img {
+  max-width: 480px;
+  height: auto;
+  width: 100%;
+}
+.work-card__text {
+  line-height: 24px;
+}
+.work-card__text h1 {
+  color: #111827;
+  margin-bottom: 24px;
+  font-size: 20px;
+}
+.work-card__text p {
+  width: 480px;
+  color: #4B5563;
+  margin-bottom: 24px;
+  font-size: 16px;
+}
+.work-card__text div {
+  margin-bottom: 24px;
+}
+.work-card__text div span {
+  background: #E5E7EB;
+  color: #4B5563;
+  border-radius: 12px;
+  border: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
