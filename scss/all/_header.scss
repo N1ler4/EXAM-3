@@ -1,0 +1,50 @@
+header {
+  width: 100%;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    align-items: center;
+
+    &__logo {
+      img {
+        width: 103px;
+        height: 36px;
+      }
+    }
+
+    ul {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+
+      button {
+        background: #000;
+        color: white;
+        border:none;
+        padding: 8px;
+        border-radius: 12px;
+        cursor: pointer;
+      }
+
+      li {
+        transform: scale(1);
+        cursor: pointer;
+        a {
+          color: $main-text;
+
+          &:hover {
+            border-bottom: 1px solid $main-text;
+            color: #000;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.1);
+          transition: all 0.1s ease-in;
+        }
+      }
+    }
+  }
+}
