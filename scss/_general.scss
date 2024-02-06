@@ -4,6 +4,8 @@
     box-sizing: border-box;
     list-style-type: none;
     text-decoration: none;
+    scroll-behavior: smooth;
+    flex-wrap: wrap;
 }
 body{
     font-family: Inter;
