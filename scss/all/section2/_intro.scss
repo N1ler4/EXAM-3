@@ -1,4 +1,4 @@
-#intro {
+.intro {
   padding: 96px 86px;
 
   .intro-flex {
@@ -59,7 +59,6 @@
     transition: all 0.2s ease;
 
     &:hover {
-
       box-shadow: 32px 35px 0px 3px rgba(229, 231, 235, 1);
       -webkit-box-shadow: 32px 35px 0px 3px rgba(229, 231, 235, 1);
       -moz-box-shadow: 32px 35px 0px 3px rgba(229, 231, 235, 1);

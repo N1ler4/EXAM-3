@@ -1,18 +1,7 @@
-#about {
+.about {
   padding: 96px 80px;
 
-  .about-button {
-    background: #e5e7eb;
-    color: $main-text;
-    width: 105px;
-    height: 28px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 535px;
-    margin-bottom: 48px;
-  }
+
 
   .about-flex {
     display: flex;
@@ -76,3 +65,17 @@
     }
   }
 }
+
+
+  .about-button {
+    background: #e5e7eb;
+    color: $main-text;
+    width: 105px;
+    height: 28px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 535px;
+    margin-bottom: 48px;
+  }

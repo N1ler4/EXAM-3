@@ -1,0 +1,53 @@
+.experience {
+  padding: 96px 80px;
+  background: #f9fafb;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 48px;
+    color: $main-h1-6;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .card {
+    background: #fff;
+    width: 896px;
+    height: 264px;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+    padding: 32px;
+    margin-left: 150px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+      0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+    opacity: 0.5;
+    transition: all 0.2s ease-in;
+    
+    &:hover{
+        opacity: 1;
+        cursor: pointer;
+    }
+
+
+    ul {
+      li {
+        strong {
+          color: $main-h1-6;
+        }
+
+        list-style-type: disc;
+        width: 350px;
+        color: $main-text;
+        margin-left: 15px;
+        line-height: 24px;
+
+        &:nth-child(1) {
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+}

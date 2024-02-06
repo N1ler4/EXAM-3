@@ -1,0 +1,43 @@
+.skill{
+    padding: 96px 80px;
+
+    h1{
+        text-align: center;
+        color:$main-h1-6;
+        font-weight: 400;
+        font-size: 20px;
+        margin-bottom: 48px;
+    }
+
+    ul{
+        display: flex;
+        gap: 65px;
+        justify-content: space-evenly;
+        align-items:center;
+
+        
+
+        li{
+            text-align: center;
+            color:$main-text;
+
+
+            img{
+                filter: grayscale(1);
+                transition: all 0.2s ease-in-out;
+                transform: scale(1);
+                cursor: pointer;
+    
+                &:hover{
+                    filter: grayscale(0);
+                    transform: scale(1.1);
+                }
+            }
+
+
+            p{
+                margin-top: 8px;
+            }
+        }
+    }
+}
