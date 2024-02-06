@@ -1,0 +1,44 @@
+.info {
+  padding: 96px 80px;
+
+  h2 {
+    width: 576px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    color: $main-text;
+    text-align: center;
+    margin-bottom: 48px;
+    margin-left: 300px;
+  }
+
+  &-call {
+    div {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: center;
+      margin-bottom: 20px;
+
+      a {
+        color: $main-h1-6;
+        font-size: 36px;
+        font-weight: 700;
+      }
+    }
+  }
+  &-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    p {
+      color: $main-text;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+    }
+  }
+}

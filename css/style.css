@@ -315,11 +315,13 @@ template {
   list-style-type: none;
   text-decoration: none;
   scroll-behavior: smooth;
-  flex-wrap: wrap;
 }
 
 body {
   font-family: Inter;
+}
+body box-icon {
+  cursor: pointer;
 }
 
 @font-face {
@@ -381,6 +383,14 @@ main {
 
 footer {
   width: 100%;
+  background: #F9FAFB;
+  padding: 24px;
+}
+footer .end {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4B5563;
 }
 
 .intro {
@@ -529,6 +539,7 @@ footer {
   gap: 65px;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 .skill ul li {
   text-align: center;
@@ -640,4 +651,113 @@ footer {
   padding-left: 20px;
   padding-right: 20px;
   font-size: 14px;
+}
+
+.testimonials {
+  padding: 96px 80px;
+}
+.testimonials h2 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4B5563;
+  text-align: center;
+  margin-bottom: 48px;
+}
+.testimonials .testimonials-card {
+  width: 370px;
+  padding: 48px;
+  gap: 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 12px;
+  line-height: 24px;
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+}
+.testimonials .testimonials-card p {
+  text-align: start;
+  color: #4B5563;
+}
+.testimonials .testimonials-card__first {
+  background: #9ca3af;
+  width: 64px;
+  height: 64px;
+  padding: 10px;
+  border-radius: 64px;
+}
+.testimonials .testimonials-card__second h4 {
+  color: #111827;
+  font-weight: 600;
+  font-style: 20px;
+  line-height: 24px;
+}
+.testimonials .testimonials-card__second p {
+  font-style: 14px;
+  font-weight: 400;
+  color: #4B5563;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.info {
+  padding: 96px 80px;
+}
+.info h2 {
+  width: 576px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  color: #4B5563;
+  text-align: center;
+  margin-bottom: 48px;
+  margin-left: 300px;
+}
+.info-call div {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.info-call div a {
+  color: #111827;
+  font-size: 36px;
+  font-weight: 700;
+}
+.info-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.info-link p {
+  color: #4B5563;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
 }/*# sourceMappingURL=style.css.map */

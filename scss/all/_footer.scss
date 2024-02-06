@@ -1,4 +1,13 @@
 footer{
     width: 100%;
-    // codes
+    background: #F9FAFB;
+    padding: 24px;
+    
+
+    .end{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $main-text;
+    }
 }
