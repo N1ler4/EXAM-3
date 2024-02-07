@@ -43,3 +43,57 @@
     }
   }
 }
+
+
+@media screen and (max-width: 375px){
+
+  .work {
+    padding: 10px;
+      h2{
+          font-size: 18px;
+      }
+    &-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      border-radius:12px;
+      padding: 15px;
+      margin-bottom: 48px;
+      img{
+          max-width: 480px;
+          height: auto;
+          width: 100%;
+          
+      }
+  
+      &__text {
+          line-height: 24px;
+          h1{
+              color:$main-h1-6;
+              margin-bottom: 24px;
+              font-size: 20px;
+          }
+          p{
+              width: 279px;
+              color: $main-text;
+              margin-bottom: 24px;
+              font-size: 16px;
+          }
+          div{
+              margin-bottom: 24px;
+              span {
+                  @include linkBtn;
+                }        
+          }
+      }
+    }
+  }
+
+  .flex-order{
+    .work-card__text{
+      order: 2;
+    }
+  }
+
+}

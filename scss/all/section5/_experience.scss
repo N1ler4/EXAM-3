@@ -51,3 +51,61 @@
     }
   }
 }
+
+
+@media screen and (max-width: 375px){
+
+  
+  .experience {
+    padding: 10px;
+    background: #f9fafb;
+  
+    h2 {
+      font-size: 18px;
+    }
+    
+    .card {
+      background: #fff;
+      width: 343px;
+      height: 377px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-evenly;
+      padding: 32px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      opacity: 0.5;
+      transition: all 0.2s ease-in;
+      margin-left: 0;
+      
+      &:hover{
+          opacity: 1;
+          cursor: pointer;
+      }
+  
+  
+      ul {
+        order: 2;
+        li {
+          strong {
+            color: $main-h1-6;
+          }
+  
+          list-style-type: disc;
+          width: 279px;
+          color: $main-text;
+          margin-left: 15px;
+          line-height: 24px;
+  
+          &:nth-child(1) {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+}

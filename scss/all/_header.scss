@@ -6,6 +6,8 @@ header {
     justify-content: space-between;
     padding: 16px;
     align-items: center;
+    
+ 
 
     &__logo {
       img {
@@ -47,4 +49,21 @@ header {
       }
     }
   }
+}
+
+.header-menu{
+    display: none;
+}  
+
+
+
+@media screen and (max-width: 375px){
+
+  .nav__list{
+    display: none;
+  }
+  .header-menu{
+    display: block;
+  }
+
 }

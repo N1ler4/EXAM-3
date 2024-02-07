@@ -13,7 +13,7 @@
     />
     <title>Document</title>
   </head>
-  <body>
+  <body class="bodyOpac-none bodyOpac">
     <!-- -------- Header start  ------- -->
     <header>
       <div class="container">
@@ -34,7 +34,9 @@
               <a href="#work" class="nav__list--item-link">Work</a>
             </li>
             <li class="nav__list--item">
-              <a href="#Testimonials" class="nav__list--item-link">Testimonials</a>
+              <a href="#Testimonials" class="nav__list--item-link"
+                >Testimonials</a
+              >
             </li>
             <li class="nav__list--item">
               <a href="#info" class="nav__list--item-link">Contact</a>
@@ -42,20 +44,47 @@
             <li>
               <box-icon name="sun" animation="spin" flip="vertical"></box-icon>
             </li>
-            <form
-              action="https://app.enhancv.com/share/776b951d/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
-            >
-              <button>Download CV</button>
-            </form>
+            <li>
+              <form
+                action="https://app.enhancv.com/share/776b951d/?utm_medium=growth&utm_campaign=share-resume&utm_source=dynamic"
+              >
+                <button>Download CV</button>
+              </form>
+            </li>
           </ul>
+          <div class="header-menu burger-menu">
+            <box-icon name="menu" color="#4b5563"></box-icon>
+          </div>
         </nav>
       </div>
     </header>
 
+    <div class="menu menu-none">
+      <div class="menu-flex">
+        <img src="./assets/images/0000.png" alt="" />
+        <box-icon name="x" color="#4b5563" class="burger-menu"></box-icon>
+      </div>
+      <ul>
+        <li><a href="#about-link">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#Testimonials">Testimonials</a></li>
+        <li><a href="#info">Contact</a></li>
+      </ul>
+      <ul class="menu-flex-2">
+        <li>
+          <p>Switch Theme</p>
+          <box-icon name="sun" animation="spin" flip="vertical"></box-icon>
+        </li>
+        <li>
+          <button>Download CV</button>
+        </li>
+      </ul>
+    </div>
+
     <!-- -------- Header end  ------- -->
 
     <main>
-      <section class="intro" >
+      <section class="intro">
         <div class="container intro-flex">
           <div class="introduction">
             <div>
@@ -89,7 +118,7 @@
           </div>
         </div>
       </section>
-      <section class="about" >
+      <section class="about">
         <div class="container">
           <div class="about-button" id="about-link"><p>About me</p></div>
           <div class="about-flex">
@@ -194,10 +223,6 @@
                 <p>Tailwindcss</p>
               </li>
               <li>
-                <img src="./assets/images/image 7.png" alt="" />
-                <p>Laravel (PHP)</p>
-              </li>
-              <li>
                 <img src="./assets/images/image 5.png" alt="" />
                 <p>Vue.js</p>
               </li>
@@ -208,6 +233,10 @@
               <li>
                 <img src="./assets/images/icon-git.svg" alt="" />
                 <p>Git</p>
+              </li>
+              <li>
+                <img src="./assets/images/image 7.png" alt="" />
+                <p>Laravel (PHP)</p>
               </li>
             </ul>
           </div>
@@ -283,7 +312,7 @@
               </a>
             </div>
           </div>
-          <div class="work-card">
+          <div class="work-card flex-order">
             <div class="work-card__text">
               <h1>Biccas</h1>
               <p>
@@ -335,154 +364,200 @@
         <div class="about-button" id="Testimonials"><p>Testimonials</p></div>
         <h2>Nice things people have said about me:</h2>
         <div class="container">
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    “Job well done! I am really impressed. He is very very good
-                    at what he does. I would recommend Sagar and will rehire in
-                    the future for Frontend development.”
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Dilshod Buymurodov</h4>
-                    <p>Founder - Paymart.uz</p>
-                  </div>
-                </div>
+          <div class="test-none">
+            <div class="testimonials-card">
+              <div class="testimonials-card__first">
+                <img src="./assets/images/icon-user.svg" class="test-img" alt="" />
               </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    “Great guy, highly recommended for any COMPLEX front-end
-                    development job! His skills are top-notch and he will be an
-                    amazing addition to any team.”
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Djasur Djumaev</h4>
-                    <p>Co-Founder - Uzum.uz</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis repellendus molestiae accusantium quis aspernatur
-                    repudiandae nisi omnis esse recusandae sit.
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Avaz Aminov</h4>
-                    <p>PM - Solution Lab</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    “Job well done! I am really impressed. He is very very good
-                    at what he does. I would recommend Sagar and will rehire in
-                    the future for Frontend development.”
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Dilshod Buymurodov</h4>
-                    <p>Founder - Paymart.uz</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    “Great guy, highly recommended for any COMPLEX front-end
-                    development job! His skills are top-notch and he will be an
-                    amazing addition to any team.”
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Djasur Djumaev</h4>
-                    <p>Co-Founder - Uzum.uz</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis repellendus molestiae accusantium quis aspernatur
-                    repudiandae nisi omnis esse recusandae sit.
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Avaz Aminov</h4>
-                    <p>PM - Solution Lab</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    “Job well done! I am really impressed. He is very very good
-                    at what he does. I would recommend Sagar and will rehire in
-                    the future for Frontend development.”
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Dilshod Buymurodov</h4>
-                    <p>Founder - Paymart.uz</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    “Great guy, highly recommended for any COMPLEX front-end
-                    development job! His skills are top-notch and he will be an
-                    amazing addition to any team.”
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Djasur Djumaev</h4>
-                    <p>Co-Founder - Uzum.uz</p>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="testimonials-card">
-                  <div class="testimonials-card__first">
-                    <img src="./assets/images/icon-user.svg" alt="" />
-                  </div>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Reiciendis repellendus molestiae accusantium quis aspernatur
-                    repudiandae nisi omnis esse recusandae sit.
-                  </p>
-                  <div class="testimonials-card__second">
-                    <h4>Avaz Aminov</h4>
-                    <p>PM - Solution Lab</p>
-                  </div>
-                </div>
+              <p>
+                “Job well done! I am really impressed. He is very very good at
+                what he does. I would recommend Sagar and will rehire in the
+                future for Frontend development.”
+              </p>
+              <div class="testimonials-card__second">
+                <h4>Dilshod Buymurodov</h4>
+                <p>Founder - Paymart.uz</p>
               </div>
             </div>
-            <div class="swiper-pagination"></div>
+            <div class="testimonials-card">
+              <div class="testimonials-card__first">
+                <img src="./assets/images/icon-user.svg" alt="" />
+              </div>
+              <p>
+                “Great guy, highly recommended for any COMPLEX front-end
+                development job! His skills are top-notch and he will be an
+                amazing addition to any team.”
+              </p>
+              <div class="testimonials-card__second">
+                <h4>Djasur Djumaev</h4>
+                <p>Co-Founder - Uzum.uz</p>
+              </div>
+            </div>
+            <div class="testimonials-card">
+              <div class="testimonials-card__first">
+                <img src="./assets/images/icon-user.svg" alt="" />
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Reiciendis repellendus molestiae accusantium quis aspernatur
+                repudiandae nisi omnis esse recusandae sit.
+              </p>
+              <div class="testimonials-card__second">
+                <h4>Avaz Aminov</h4>
+                <p>PM - Solution Lab</p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-none">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      “Job well done! I am really impressed. He is very very
+                      good at what he does. I would recommend Sagar and will
+                      rehire in the future for Frontend development.”
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Dilshod Buymurodov</h4>
+                      <p>Founder - Paymart.uz</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      “Great guy, highly recommended for any COMPLEX front-end
+                      development job! His skills are top-notch and he will be
+                      an amazing addition to any team.”
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Djasur Djumaev</h4>
+                      <p>Co-Founder - Uzum.uz</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis repellendus molestiae accusantium quis
+                      aspernatur repudiandae nisi omnis esse recusandae sit.
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Avaz Aminov</h4>
+                      <p>PM - Solution Lab</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      “Job well done! I am really impressed. He is very very
+                      good at what he does. I would recommend Sagar and will
+                      rehire in the future for Frontend development.”
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Dilshod Buymurodov</h4>
+                      <p>Founder - Paymart.uz</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      “Great guy, highly recommended for any COMPLEX front-end
+                      development job! His skills are top-notch and he will be
+                      an amazing addition to any team.”
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Djasur Djumaev</h4>
+                      <p>Co-Founder - Uzum.uz</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis repellendus molestiae accusantium quis
+                      aspernatur repudiandae nisi omnis esse recusandae sit.
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Avaz Aminov</h4>
+                      <p>PM - Solution Lab</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      “Job well done! I am really impressed. He is very very
+                      good at what he does. I would recommend Sagar and will
+                      rehire in the future for Frontend development.”
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Dilshod Buymurodov</h4>
+                      <p>Founder - Paymart.uz</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      “Great guy, highly recommended for any COMPLEX front-end
+                      development job! His skills are top-notch and he will be
+                      an amazing addition to any team.”
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Djasur Djumaev</h4>
+                      <p>Co-Founder - Uzum.uz</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="testimonials-card">
+                    <div class="testimonials-card__first">
+                      <img src="./assets/images/icon-user.svg" alt="" />
+                    </div>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Reiciendis repellendus molestiae accusantium quis
+                      aspernatur repudiandae nisi omnis esse recusandae sit.
+                    </p>
+                    <div class="testimonials-card__second">
+                      <h4>Avaz Aminov</h4>
+                      <p>PM - Solution Lab</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
           </div>
         </div>
       </section>
@@ -497,16 +572,32 @@
           <div>
             <div class="info-call">
               <div>
-                <box-icon name="chat" color="#4b5563"></box-icon>
+                <box-icon
+                  name="chat"
+                  color="#4b5563"
+                  class="box-width"
+                ></box-icon>
                 <a href="mailto:bahtiyorov.nozim@gmail.com"
                   >bahtiyorov.nozim@gmail.com</a
                 >
-                <box-icon name="copy" color="#4b5563"></box-icon>
+                <box-icon
+                  name="copy"
+                  color="#4b5563"
+                  class="box-width"
+                ></box-icon>
               </div>
               <div>
-                <box-icon name='phone' color='#4b5563' ></box-icon>
+                <box-icon
+                  name="phone"
+                  color="#4b5563"
+                  class="box-width"
+                ></box-icon>
                 <a href="tel:+998971566690">+998(97)156-66-90</a>
-                <box-icon name="copy" color="#4b5563"></box-icon>
+                <box-icon
+                  name="copy"
+                  color="#4b5563"
+                  class="box-width"
+                ></box-icon>
               </div>
             </div>
 
@@ -525,7 +616,7 @@
 
     <footer>
       <div class="container end">
-        <box-icon name='copyright' color='#4b5563' ></box-icon>
+        <box-icon name="copyright" color="#4b5563"></box-icon>
         <p>2023 | Designed and coded with ❤️️ by NAJOT TA’LIM</p>
       </div>
     </footer>
@@ -533,4 +624,5 @@
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./JS/swipper.js"></script>
+  <script src="./JS/menu.js"></script>
 </html>

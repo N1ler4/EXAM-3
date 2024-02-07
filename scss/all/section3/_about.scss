@@ -1,8 +1,6 @@
 .about {
   padding: 96px 80px;
 
-
-
   .about-flex {
     display: flex;
     justify-content: space-between;
@@ -45,7 +43,7 @@
         width: 584px;
         line-height: 24px;
       }
-      ul{
+      ul {
         width: 434px;
         display: flex;
         flex-wrap: wrap;
@@ -53,19 +51,100 @@
         justify-content: space-between;
         margin-left: 20px;
 
-        li{
-            list-style-type:disc;
+        li {
+          list-style-type: disc;
 
-            &::marker{
-                color:black;
-            }
-            
+          &::marker {
+            color: black;
+          }
         }
       }
     }
   }
 }
 
+.about-button {
+  background: #e5e7eb;
+  color: $main-text;
+  width: 105px;
+  height: 28px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 535px;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 375px) {
+  .about {
+    padding: 10px;
+    .about-flex {
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        width: 250px;
+        height: 330px;
+        margin-bottom: 50px;
+      }
+
+      .about-text {
+        color: #4b5563;
+        display: flex;
+        flex-direction: column;
+
+        gap: 20px;
+        width: 343px;
+        h1 {
+          font-size: 26px;
+          font-weight: 600;
+          color: $main-h1-6;
+          width: 343px;
+          margin-left: 0px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 400;
+          width: 343px;
+          line-height: 24px;
+          margin-left: 0px;
+          padding: 10px;
+        }
+        ul {
+          display: grid;
+          grid-template-areas:
+            "a b"
+            "c d";
+          margin-left: 0px;
+          width: 343px;
+
+          li {
+            list-style-type: disc;
+            font-size: 16px;
+            text-overflow: ellipsis;
+            &::marker {
+              color: black;
+            }
+            &:nth-child(1) {
+              grid-area: a;
+              margin-left: 20px;
+            }
+            &:nth-child(2) {
+              grid-area: b;
+            }
+            &:nth-child(3) {
+              grid-area: c;
+              margin-left: 20px;
+            }
+            &:nth-child(4) {
+              grid-area: d;
+            }
+          }
+        }
+      }
+    }
+  }
 
   .about-button {
     background: #e5e7eb;
@@ -76,6 +155,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 535px;
+    margin-left: 110px;
     margin-bottom: 48px;
+    margin-top: 128px;
   }
+}

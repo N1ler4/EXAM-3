@@ -11,3 +11,14 @@ footer{
         color: $main-text;
     }
 }
+
+
+@media screen and (max-width: 375px){
+
+    footer{
+        width: 352px;
+        font-size: 12px;
+        padding: 0;
+    }
+
+}
