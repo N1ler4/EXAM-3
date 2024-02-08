@@ -40,23 +40,21 @@
         }
     }
 }
+
 @media screen and (max-width: 769px) {
-
-
     .skill {
         padding: 20px;
         width: 700px;
         margin-left: 30px;
 
-        .about-button{
+        .about-button {
             margin-left: 280px;
             margin-top: 30px;
         }
 
-        h1 {
+        h2 {
             text-align: center;
             color: $main-h1-6; /* Define or replace $main-h1-6 with a color value */
-            font-weight: 400;
             font-size: 22px;
             margin-bottom: 48px;
             margin-left: 50px;
@@ -73,24 +71,20 @@
     }
 }
 
-
 @media screen and (max-width: 576px) {
-
-
     .skill {
         padding: 10px;
         width: 500px;
         margin-left: 30px;
 
-        .about-button{
+        .about-button {
             margin-left: 170px;
             margin-top: 30px;
         }
 
-        h1 {
+        h2 {
             text-align: center;
             color: $main-h1-6; /* Define or replace $main-h1-6 with a color value */
-            font-weight: 400;
             font-size: 18px;
             margin-bottom: 48px;
         }
@@ -110,20 +104,35 @@
     .skill {
         padding: 10px;
 
-        h1 {
+        .about-button {
+            margin-left: 90px;
+        }
+
+        h2 {
+            width: 300px;
             text-align: center;
             color: $main-h1-6; /* Define or replace $main-h1-6 with a color value */
-            font-weight: 400;
-            font-size: 18px;
             margin-bottom: 48px;
+            font-size: 16px;
+            margin-left: -10px;
+
         }
 
         ul {
+            width: 343px;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             flex-wrap: wrap;
-            gap: 20px;
+            gap: 37px;
+            margin-left: -35px;
+
+            li{
+                img{
+                    width: 64px;
+                    height: 64px;
+                }
+            }
         }
     }
 }

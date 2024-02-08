@@ -205,9 +205,14 @@
 
   .testimonials {
     padding: 10px;
+    width: 343px;
   
     h2 {
       font-size: 18px;
+    }
+
+    .about-button{
+      margin-left: 110px;
     }
   
     .testimonials-card {
@@ -219,6 +224,7 @@
       flex-direction: column;
       align-items: center;
       border-radius: 12px;
+      margin-left: -10px;
   
   
       &__first {

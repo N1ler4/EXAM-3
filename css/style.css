@@ -330,11 +330,16 @@ body box-icon {
   }
 }
 @media screen and (max-width: 576px) {
+  body .menu {
+    width: 522px;
+  }
+}
+@media screen and (max-width: 375px) {
   body {
     overflow-x: hidden;
   }
   body .menu {
-    width: 522px;
+    width: 322px;
   }
 }
 @font-face {
@@ -531,7 +536,7 @@ footer .end {
     padding: 0;
   }
   .intro .intro-flex .introduction h1 {
-    font-style: 50px;
+    font-size: 50px;
     width: 700px;
   }
   .intro .intro-flex .introduction p {
@@ -558,7 +563,7 @@ footer .end {
     padding: 0;
   }
   .intro .intro-flex .introduction h1 {
-    font-style: 42px;
+    font-size: 42px;
     width: 550px;
   }
   .intro .intro-flex .introduction p {
@@ -567,7 +572,7 @@ footer .end {
   .intro img {
     width: 380px;
     height: 400px;
-    margin-left: 70px;
+    margin-left: 0;
     margin-bottom: 20px;
   }
 }
@@ -585,7 +590,7 @@ footer .end {
     padding: 0;
   }
   .intro .intro-flex .introduction h1 {
-    font-style: 36px;
+    font-size: 36px;
     width: 303px;
   }
   .intro .intro-flex .introduction p {
@@ -816,11 +821,22 @@ footer .end {
   .about .about-flex {
     flex-direction: column;
     align-items: center;
+    justify-content: start;
+  }
+  .about .about-flex .about-button {
+    background: #e5e7eb;
+    color: #4B5563;
+    width: 70px;
+    height: 28px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .about .about-flex img {
-    width: 250px;
-    height: 330px;
-    margin-bottom: 50px;
+    width: 220px;
+    height: 300px;
+    margin-bottom: 80px;
   }
   .about .about-flex .about-text {
     color: #4b5563;
@@ -872,18 +888,21 @@ footer .end {
   .about .about-flex .about-text ul li:nth-child(4) {
     grid-area: d;
   }
-  .about-button {
-    background: #e5e7eb;
-    color: #4B5563;
-    width: 105px;
-    height: 28px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 110px;
-    margin-bottom: 48px;
-    margin-top: 128px;
+}
+@media screen and (max-width: 769px) {
+  #about-link {
+    margin-left: 290px;
+  }
+}
+@media screen and (max-width: 576px) {
+  #about-link {
+    margin-left: 200px;
+  }
+}
+@media screen and (max-width: 375px) {
+  #about-link {
+    margin-left: 100px;
+    margin-top: 30px;
   }
 }
 .skill {
@@ -931,10 +950,9 @@ footer .end {
     margin-left: 280px;
     margin-top: 30px;
   }
-  .skill h1 {
+  .skill h2 {
     text-align: center;
     color: #111827; /* Define or replace $main-h1-6 with a color value */
-    font-weight: 400;
     font-size: 22px;
     margin-bottom: 48px;
     margin-left: 50px;
@@ -958,10 +976,9 @@ footer .end {
     margin-left: 170px;
     margin-top: 30px;
   }
-  .skill h1 {
+  .skill h2 {
     text-align: center;
     color: #111827; /* Define or replace $main-h1-6 with a color value */
-    font-weight: 400;
     font-size: 18px;
     margin-bottom: 48px;
   }
@@ -978,19 +995,29 @@ footer .end {
   .skill {
     padding: 10px;
   }
-  .skill h1 {
+  .skill .about-button {
+    margin-left: 90px;
+  }
+  .skill h2 {
+    width: 300px;
     text-align: center;
     color: #111827; /* Define or replace $main-h1-6 with a color value */
-    font-weight: 400;
-    font-size: 18px;
     margin-bottom: 48px;
+    font-size: 16px;
+    margin-left: -10px;
   }
   .skill ul {
+    width: 343px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 37px;
+    margin-left: -35px;
+  }
+  .skill ul li img {
+    width: 64px;
+    height: 64px;
   }
 }
 .experience {
@@ -1143,6 +1170,9 @@ footer .end {
     padding: 10px;
     background: #f9fafb;
   }
+  .experience .about-button {
+    margin-left: 120px;
+  }
   .experience h2 {
     font-size: 18px;
   }
@@ -1173,11 +1203,12 @@ footer .end {
     list-style-type: disc;
     width: 279px;
     color: #4B5563;
-    margin-left: 15px;
+    margin-left: -35px;
     line-height: 24px;
   }
   .experience .card ul li strong {
     color: #111827;
+    margin-left: -50px;
   }
   .experience .card ul li:nth-child(1) {
     margin-left: 0px;
@@ -1345,10 +1376,14 @@ footer .end {
 }
 @media screen and (max-width: 375px) {
   .work {
+    width: 343px;
     padding: 10px;
   }
   .work h2 {
     font-size: 18px;
+  }
+  .work .about-button {
+    margin-left: 100px;
   }
   .work-card {
     display: flex;
@@ -1358,11 +1393,15 @@ footer .end {
     border-radius: 12px;
     padding: 15px;
     margin-bottom: 48px;
+    margin-left: 20px;
   }
   .work-card img {
     max-width: 480px;
     height: auto;
     width: 100%;
+  }
+  .work-card .about-button {
+    margin-left: 0;
   }
   .work-card__text {
     line-height: 24px;
@@ -1572,9 +1611,13 @@ footer .end {
 @media screen and (max-width: 375px) {
   .testimonials {
     padding: 10px;
+    width: 343px;
   }
   .testimonials h2 {
     font-size: 18px;
+  }
+  .testimonials .about-button {
+    margin-left: 110px;
   }
   .testimonials .testimonials-card {
     width: 343px;
@@ -1585,6 +1628,7 @@ footer .end {
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
+    margin-left: -10px;
   }
   .testimonials .testimonials-card__first {
     background: #9ca3af;
@@ -1753,6 +1797,9 @@ footer .end {
     font-size: 20px;
     margin-bottom: 48px;
     margin-left: -10px;
+  }
+  .info .about-button {
+    margin-left: 100px;
   }
   .info-call div {
     display: flex;

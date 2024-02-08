@@ -22,11 +22,22 @@ body {
 }
 @media screen and (max-width: 576px) {
   body {
-    overflow-x: hidden;
+
     .menu {
       width: 522px;
     }
   }
+}
+@media screen and (max-width: 375px) {
+
+  body {
+    overflow-x: hidden;
+
+    .menu {
+      width: 322px;
+    }
+  }
+
 }
 
 

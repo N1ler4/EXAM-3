@@ -1,214 +1,219 @@
 .work {
   padding: 96px 80px;
-    h2{
-        margin-bottom: 96px;
-        text-align: center;
-        color: $main-h1-6;
-        font-size: 20px;
-        font-weight: 400;
-    }
+  h2 {
+    margin-bottom: 96px;
+    text-align: center;
+    color: $main-h1-6;
+    font-size: 20px;
+    font-weight: 400;
+  }
   &-card {
     display: flex;
     justify-content: space-evenly;
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
-    border-radius:12px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16),
+      0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+    border-radius: 12px;
     padding: 15px;
     margin-bottom: 48px;
-    img{
-        max-width: 480px;
-        height: auto;
-        width: 100%;
-        
+    img {
+      max-width: 480px;
+      height: auto;
+      width: 100%;
     }
 
     &__text {
-        line-height: 24px;
-        h1{
-            color:$main-h1-6;
-            margin-bottom: 24px;
-            font-size: 20px;
+      line-height: 24px;
+      h1 {
+        color: $main-h1-6;
+        margin-bottom: 24px;
+        font-size: 20px;
+      }
+      p {
+        width: 480px;
+        color: $main-text;
+        margin-bottom: 24px;
+        font-size: 16px;
+      }
+      div {
+        margin-bottom: 24px;
+        span {
+          @include linkBtn;
         }
-        p{
-            width: 480px;
-            color: $main-text;
-            margin-bottom: 24px;
-            font-size: 16px;
-        }
-        div{
-            margin-bottom: 24px;
-            span {
-                @include linkBtn;
-              }        
-        }
+      }
     }
   }
 }
-@media screen and (max-width: 769px){
-
+@media screen and (max-width: 769px) {
   .work {
     padding: 20px;
-      h2{
-          font-size: 22px;
-      }
-    .about-button{
+    h2 {
+      font-size: 22px;
+    }
+    .about-button {
       margin-left: 290px;
       margin-top: 30px;
     }
-      
+
     &-card {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
-      border-radius:12px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
       padding: 15px;
       margin-bottom: 48px;
-      img{
-          max-width: 700px;
-          height: auto;
-          width: 100%;
-          
+      img {
+        max-width: 700px;
+        height: auto;
+        width: 100%;
       }
-  
+
       &__text {
-          line-height: 24px;
-          h1{
-              color:$main-h1-6;
-              margin-bottom: 24px;
-              font-size: 22px;
+        line-height: 24px;
+        h1 {
+          color: $main-h1-6;
+          margin-bottom: 24px;
+          font-size: 22px;
+        }
+        p {
+          width: 700px;
+          color: $main-text;
+          margin-bottom: 24px;
+          font-size: 16px;
+        }
+        div {
+          margin-bottom: 24px;
+          span {
+            @include linkBtn;
           }
-          p{
-              width: 700px;
-              color: $main-text;
-              margin-bottom: 24px;
-              font-size: 16px;
-          }
-          div{
-              margin-bottom: 24px;
-              span {
-                  @include linkBtn;
-                }        
-          }
+        }
       }
     }
   }
 
-  .flex-order{
-    .work-card__text{
+  .flex-order {
+    .work-card__text {
       order: 2;
     }
   }
-
 }
 
-
-@media screen and (max-width: 576px){
-
+@media screen and (max-width: 576px) {
   .work {
     padding: 20px;
-      h2{
-          font-size: 18px;
-      }
-    .about-button{
+    h2 {
+      font-size: 18px;
+    }
+    .about-button {
       margin-left: 200px;
       margin-top: 30px;
     }
-      
+
     &-card {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
-      border-radius:12px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
       padding: 15px;
       margin-bottom: 48px;
-      img{
-          max-width: 480px;
-          height: auto;
-          width: 100%;
-          
+      img {
+        max-width: 480px;
+        height: auto;
+        width: 100%;
       }
-  
+
       &__text {
-          line-height: 24px;
-          h1{
-              color:$main-h1-6;
-              margin-bottom: 24px;
-              font-size: 20px;
+        line-height: 24px;
+        h1 {
+          color: $main-h1-6;
+          margin-bottom: 24px;
+          font-size: 20px;
+        }
+        p {
+          width: 450px;
+          color: $main-text;
+          margin-bottom: 24px;
+          font-size: 16px;
+        }
+        div {
+          margin-bottom: 24px;
+          span {
+            @include linkBtn;
           }
-          p{
-              width: 450px;
-              color: $main-text;
-              margin-bottom: 24px;
-              font-size: 16px;
-          }
-          div{
-              margin-bottom: 24px;
-              span {
-                  @include linkBtn;
-                }        
-          }
+        }
       }
     }
   }
 
-  .flex-order{
-    .work-card__text{
+  .flex-order {
+    .work-card__text {
       order: 2;
     }
   }
-
 }
 
-@media screen and (max-width: 375px){
-
+@media screen and (max-width: 375px) {
   .work {
+    width: 343px;
     padding: 10px;
-      h2{
-          font-size: 18px;
-      }
+    h2 {
+      font-size: 18px;
+    }
+
+    .about-button{
+      margin-left: 100px;
+    }
+
+
     &-card {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16), 0px 4px 3px 0px rgba(0, 0, 0, 0.07);
-      border-radius:12px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      border-radius: 12px;
       padding: 15px;
       margin-bottom: 48px;
-      img{
-          max-width: 480px;
-          height: auto;
-          width: 100%;
-          
+      margin-left: 20px;
+      img {
+        max-width: 480px;
+        height: auto;
+        width: 100%;
       }
-  
+
+      .about-button {
+        margin-left: 0;
+      }
+
       &__text {
-          line-height: 24px;
-          h1{
-              color:$main-h1-6;
-              margin-bottom: 24px;
-              font-size: 20px;
+        line-height: 24px;
+        h1 {
+          color: $main-h1-6;
+          margin-bottom: 24px;
+          font-size: 20px;
+        }
+        p {
+          width: 279px;
+          color: $main-text;
+          margin-bottom: 24px;
+          font-size: 16px;
+        }
+        div {
+          margin-bottom: 24px;
+          span {
+            @include linkBtn;
           }
-          p{
-              width: 279px;
-              color: $main-text;
-              margin-bottom: 24px;
-              font-size: 16px;
-          }
-          div{
-              margin-bottom: 24px;
-              span {
-                  @include linkBtn;
-                }        
-          }
+        }
       }
     }
   }
 
-  .flex-order{
-    .work-card__text{
+  .flex-order {
+    .work-card__text {
       order: 2;
     }
   }
-
 }

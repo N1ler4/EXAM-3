@@ -246,11 +246,24 @@
     .about-flex {
       flex-direction: column;
       align-items: center;
+      justify-content: start;
+
+      .about-button {
+        background: #e5e7eb;
+        color: $main-text;
+        width: 70px;
+        height: 28px;
+        border-radius: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      }
 
       img {
-        width: 250px;
-        height: 330px;
-        margin-bottom: 50px;
+        width: 220px;
+        height: 300px;
+        margin-bottom: 80px;
       }
 
       .about-text {
@@ -310,17 +323,26 @@
     }
   }
 
-  .about-button {
-    background: #e5e7eb;
-    color: $main-text;
-    width: 105px;
-    height: 28px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 110px;
-    margin-bottom: 48px;
-    margin-top: 128px;
+
+}
+
+
+
+@media screen and (max-width: 769px){
+  #about-link{
+    margin-left: 290px;
+  }
+}
+@media screen and (max-width: 576px){
+
+  #about-link{
+    margin-left: 200px;
+  }
+
+}
+@media screen and (max-width: 375px){
+  #about-link{
+    margin-left: 100px;
+    margin-top: 30px;
   }
 }

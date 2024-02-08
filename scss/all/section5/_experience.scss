@@ -185,6 +185,10 @@
   .experience {
     padding: 10px;
     background: #f9fafb;
+
+    .about-button{
+      margin-left: 120px;
+    }
   
     h2 {
       font-size: 18px;
@@ -218,12 +222,13 @@
         li {
           strong {
             color: $main-h1-6;
+            margin-left: -50px;
           }
   
           list-style-type: disc;
           width: 279px;
           color: $main-text;
-          margin-left: 15px;
+          margin-left: -35px;
           line-height: 24px;
   
           &:nth-child(1) {
