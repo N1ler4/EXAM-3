@@ -51,7 +51,133 @@
     }
   }
 }
+@media screen and (max-width: 769px){
 
+  
+  .experience {
+    padding: 20px;
+    background: #f9fafb;
+
+    .about-button{
+      margin-left: 290px;
+      margin-top: 30px;
+      margin-bottom: 40px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+    
+    .card {
+      background: #fff;
+      width: 700px;
+      height: 377px;
+      display: flex;
+      align-items: start;
+      justify-content: space-evenly;
+      padding: 32px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      opacity: 0.5;
+      transition: all 0.2s ease-in;
+      margin-left: 0;
+      
+      &:hover{
+          opacity: 1;
+          cursor: pointer;
+      }
+  
+  
+      ul {
+        width: auto;
+        margin-left: 60px;
+        li {
+          strong {
+            color: $main-h1-6;
+          }
+  
+          list-style-type: disc;
+          width: 279px;
+          color: $main-text;
+          margin-left: 15px;
+          line-height: 24px;
+  
+          &:nth-child(1) {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and (max-width: 576px){
+
+  
+  .experience {
+    padding: 20px;
+    background: #f9fafb;
+
+    .about-button{
+      margin-left: 200px;
+      margin-top: 30px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+    
+    .card {
+      background: #fff;
+      width: 500px;
+      height: 377px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 32px;
+      margin-bottom: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.06),
+        0px 4px 3px 0px rgba(0, 0, 0, 0.07);
+      opacity: 0.5;
+      transition: all 0.2s ease-in;
+      margin-left: 0;
+      
+      &:hover{
+          opacity: 1;
+          cursor: pointer;
+      }
+  
+  
+      ul {
+        order: 2;
+        width: auto;
+        margin-left: 60px;
+        li {
+          strong {
+            color: $main-h1-6;
+          }
+  
+          list-style-type: disc;
+          width: 279px;
+          color: $main-text;
+          margin-left: 15px;
+          line-height: 24px;
+  
+          &:nth-child(1) {
+            margin-left: 0px;
+          }
+        }
+      }
+    }
+  }
+
+}
 
 @media screen and (max-width: 375px){
 

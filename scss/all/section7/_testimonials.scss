@@ -77,6 +77,128 @@
 .test-none{
   display: none;
 }
+@media screen and (max-width: 769px){
+
+  .testimonials {
+    padding: 20px;
+    
+    .about-button{
+      margin-left: 310px;
+    }
+  
+    h2 {
+      font-size: 22px;
+    }
+  
+    .testimonials-card {
+      width: 600px;
+      padding: 32px;
+      gap: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      margin-left: 50px;
+  
+  
+      &__first {
+        background: #9ca3af;
+        width: 64px;
+        height: 64px;
+        padding: 10px;    
+        border-radius: 64px;
+      }
+      &__second {
+        h4 {
+          color: $main-h1-6;
+          font-weight: 600;
+          font-style: 20px;
+          line-height: 24px;
+        }
+        p {
+          font-style: 14px;
+          font-weight: 400;
+          color: $main-text;
+        }
+      }
+    }
+  }
+
+  .test-none{
+    display: block;
+    margin-bottom: 24px;
+  }
+  .swiper-none{
+    display: none;
+  }
+  .testimonials-card{
+    margin-bottom: 24px;
+    margin-left: -10px;
+  }
+}
+
+
+@media screen and (max-width: 576px){
+
+  .testimonials {
+    padding: 20px;
+    
+    .about-button{
+      margin-left: 200px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    .testimonials-card {
+      width: 400px;
+      padding: 32px;
+      gap: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 12px;
+      margin-left: 50px;
+  
+  
+      &__first {
+        background: #9ca3af;
+        width: 64px;
+        height: 64px;
+        padding: 10px;    
+        border-radius: 64px;
+      }
+      &__second {
+        h4 {
+          color: $main-h1-6;
+          font-weight: 600;
+          font-style: 20px;
+          line-height: 24px;
+        }
+        p {
+          font-style: 14px;
+          font-weight: 400;
+          color: $main-text;
+        }
+      }
+    }
+  }
+
+  .test-none{
+    display: block;
+    margin-bottom: 24px;
+  }
+  .swiper-none{
+    display: none;
+  }
+  .testimonials-card{
+    margin-bottom: 24px;
+    margin-left: -10px;
+  }
+}
 
 
 @media screen and (max-width: 375px){

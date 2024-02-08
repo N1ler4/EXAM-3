@@ -1,0 +1,179 @@
+body {
+  background: #fff;
+  transition: all 0.3s ease-in;
+}
+.dark-mode {
+  background: #030712;
+
+  a {
+    color: white;
+
+    &:hover {
+      color: white;
+    }
+  }
+}
+.dark-mode .experience {
+  background: #030712;
+}
+.dark-mode {
+  .intro {
+    h1 {
+      color: white;
+    }
+    p {
+      color: white;
+    }
+  }
+}
+
+.dark-mode {
+  .about {
+    background: #111827;
+    color: white;
+
+    &-text {
+      p {
+        color: white;
+      }
+      ul {
+        li {
+          color: white;
+        }
+      }
+    }
+  }
+
+  .skills {
+    .container {
+      .skills-text {
+        h2 {
+          color: white;
+        }
+      }
+    }
+  }
+}
+.dark-mode .experience {
+  background: #111827;
+}
+
+.dark-mode .container .about-text .about-text_h2 {
+  color: white;
+}
+
+.dark-mode .container .skills-text h2 {
+  color: white;
+}
+
+.dark-mode .container .skills-text ul li p {
+  color: white;
+}
+
+.dark-mode .experience h2 {
+  color: white;
+}
+
+.dark-mode .card {
+  background: #1f2937;
+}
+.dark-mode .card ul li strong {
+  color: white;
+}
+.dark-mode .card ul li {
+  color: white;
+}
+.dark-mode .card p {
+  color: white;
+}
+
+.dark-mode .work h2 {
+  color: white;
+}
+.dark-mode .work h1 {
+  color: white;
+}
+.dark-mode .work .work-card {
+  background: #1f2937;
+}
+.dark-mode .testimonials h2 {
+  color: white;
+}
+.dark-mode .testimonials .testimonials-card {
+  background: #1f2937;
+  border-radius: 0px;
+  margin-left: 0.3px;
+}
+.dark-mode .testimonials .testimonials-card p {
+  color: white;
+}
+.dark-mode .testimonials .testimonials-card h4 {
+  color: white;
+}
+.dark-mode .testimonials {
+  background: #111827;
+}
+dark-mode .info .container .about-button p{
+    color: #E5E7EB;
+}
+
+.dark-mode .info .container  h2{
+    color: white;
+}
+.dark-mode .info .container a{
+    color: white;
+}
+.dark-mode .info .container p{
+    color: white;
+}
+
+.dark-mode footer {
+  background: #111827;
+  p {
+    color: white;
+  }
+}
+
+.dark-mode .menu{
+    background: #030712;
+}
+
+.dark-mode .menu a{
+    color: white;
+}
+
+.dark-mode .menu button{
+    background: #FFF;
+    color: #111827;
+}
+.dark-mode .menu p{
+    color: #D1D5DB;
+}
+@media screen and (max-width: 769px){
+
+  .dark-mode .testimonials .testimonials-card {
+      background: #1f2937;
+      border-radius: 12px;
+      margin-left: 50px;
+  }
+
+}
+@media screen and (max-width: 576px){
+
+  .dark-mode .testimonials .testimonials-card {
+      background: #1f2937;
+      border-radius: 12px;
+      margin-left: 50px;
+  }
+
+}
+@media screen and (max-width: 375px){
+
+    .dark-mode .testimonials .testimonials-card {
+        background: #1f2937;
+        border-radius: 12px;
+        margin-left: -10px;
+    }
+
+}
+

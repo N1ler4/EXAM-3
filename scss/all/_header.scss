@@ -1,5 +1,9 @@
 header {
   width: 100%;
+  position: fixed;
+  z-index: 555;
+  backdrop-filter: blur(8px);
+  
 
   nav {
     display: flex;
@@ -54,11 +58,37 @@ header {
 .header-menu{
     display: none;
 }  
+@media screen and (max-width: 769px){
+  header{
+    position: unset;
+  }
+  .nav__list{
+    display: none;
+  }
+  .header-menu{
+    display: block;
+  }
+
+}
 
 
+@media screen and (max-width: 576px){
+  header{
+    position: unset;
+  }
+  .nav__list{
+    display: none;
+  }
+  .header-menu{
+    display: block;
+  }
+
+}
 
 @media screen and (max-width: 375px){
-
+  header{
+    position: unset;
+  }
   .nav__list{
     display: none;
   }
